@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me !</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Roboto:wght@100&family=Yuji+Boku&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/mon logo2.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/mon logo2.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/mon logo2.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a id="accueil" href="index.html" target="_blank">Home</a>
+            </li>
+            <li>
+              <a id="qui" href="about.html" target="_blank">About Me</a>
+            </li>
+            <li>
+              <a id="contacte" href="contact.html" target="_blank">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" id="menubar" onclick="showMenu()"></i>
+      </nav>
+    </section>
+    <div class="lang">
+      <a class="lang-eng" href="#eng" data-reload
+        ><img class="eng" src="uk.png" alt=""
+      /></a>
+      <a class="lang-fr" href="#fr" data-reload
+        ><img class="fr" src="france.png" alt=""
+      /></a>
+    </div>
+    <div class="mainpage">
+      <h1 id="sendmessage" class="message">You can send me a message!</h1>
+      <img class="messagephoto" src="images/message.png" alt="" /> <br />
+
+      <form action="form-handler.php" method="post">
+        <label id="nom">Your Name</label> <br />
+        <input
+          class="inputname"
+          type="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <br />
+        <label id="email">Your E-mail</label><br /><input
+          class="inputmail"
+          type="email"
+          name="email"
+          placeholder="Your e-mail"
+          required
+        />
+        <br />
+        <label id="message">Your Message</label><br />
+        <textarea
+          name="message"
+          class="textmessage"
+          cols="40"
+          rows="5"
+          placeholder="Your message..."
+          required
+        ></textarea>
+        <br />
+        <button id="send" type="submit" class="button">Send</button>
+      </form>
+      <div class="contact-info">
+        <h1 id="cordonnees" class="contactinfo">My Contact Information!</h1>
+        <i id="envelope" class="fas fa-envelope"></i>
+        <p class="email">tunahankuzucuu@gmail.com</p>
+        <i id="phone" class="fas fa-phone"></i>
+        <p class="phone">06.50.05.35.66</p>
+        <i id="adresse" class="fas fa-map-marker-alt"></i>
+        <p class="adress">2 Résidence Les Varoilles 25350, Mandeure/FRANCE</p>
+      </div>
+    </div>
+
+    <!---footer--->
+    <div class="footer">
+      <div class="socialmediaicons">
+        <a
+          class="socialmedia"
+          href="https://www.facebook.com/tnhn.kzc"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://www.instagram.com/tunahankuzucuu/?hl=tr"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://twitter.com/tunahankuzucu"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          class="socialmedia"
+          href="https://www.linkedin.com/in/tunahankuzucu/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <br />
+        <p class="copyright">&copy;Tunahan Kuzucu 2021</p>
+        <a href="about.html"><i id="arrowup" class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+
+    <!---script--->
+    <script>
+      // Define language reload anchors
+      var dataReload = document.querySelectorAll("[data-reload]");
+      // Language translations
+      var language = {
+        eng: {
+          accueil: "Home",
+          qui: "About",
+          contact: "Contact",
+          sendmessage: "You can send me a message!",
+          nom: "Your name",
+          email: "Your e-mail",
+          message: "Your message...",
+          send: "Send",
+          cordonnees: "My Contact Information!",
+        },
+        fr: {
+          accueil: "Accueil",
+          qui: "Qui Suis-Je ?",
+          contact: "Contact",
+          sendmessage: "Vous pouvez m'envoyer un message !",
+          nom: "Votre nom",
+          email: "Votre e-mail",
+          message: "Votre message",
+          send: "Envoyer",
+          cordonnees: "Mes Cordonnées!",
+        },
+      };
+
+      //Define Language via window hash
+      if (window.location.hash) {
+        if (window.location.hash === "#fr") {
+          accueil.textContent = language.fr.accueil;
+          qui.textContent = language.fr.qui;
+          contacte.textContent = language.fr.contact;
+          sendmessage.textContent = language.fr.sendmessage;
+          nom.textContent = language.fr.nom;
+          email.textContent = language.fr.email;
+          message.textContent = language.fr.message;
+          send.textContent = language.fr.send;
+          cordonnees.textContent = language.fr.cordonnees;
+        }
+      }
+
+      // mobile menu script
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
