@@ -418,7 +418,7 @@ button:hover {
   nav ul li a {
     color: black;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
   }
   nav ul li {
     overflow-y: hidden;
@@ -638,7 +638,7 @@ button:hover {
 @media screen and (min-width: 1440px) {
   /*-- ABOUT PAGE --*/
   #arrow-down {
-    margin-left: 750px;
+    margin-left: 950px;
     font-size: 64px;
   }
   #arrow-right {
