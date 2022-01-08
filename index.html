@@ -237,6 +237,15 @@
           selftaught.textContent = language.fr.selftaught;
         }
       }
+      
+      // define language reload onclick illiteration
+      for (i = 0; i <= dataReload.length; i++) {
+        dataReload[i].onclick = function () {
+          setTimeout(function () {
+            location.reload();
+          }, 100);
+        };
+      }
 
       // mobile menu script
       var navLinks = document.getElementById("navLinks");
